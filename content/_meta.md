@@ -1,5 +1,5 @@
 ---
-Logo: image/Portfolio_logo.png
+Logo: assets/img/logo.png
 #Tagline: Teknisk webbdesign och användbarhet.
 Social:
     - title: Link till sidans github repo.
