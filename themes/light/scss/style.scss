@@ -1,0 +1,124 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+
+@import 'blockquotes';
+@import 'code';
+
+@font-face {
+    font-family: 'MyFont_SerifReg';
+    src: url('/themes/shared/googlefonts/Oswald-Bold.ttf');
+    src: url('/themes/shared/googlefonts/Oswald-Medium.ttf');
+    src: url('/themes/shared/googlefonts/Oswald-Regular.ttf');
+    src: url('/themes/shared/googlefonts/RobotoMono-Bold.ttf');
+    src: url('/themes/shared/googlefonts/RobotoMono-Medium.ttf');
+    src: url('/themes/shared/googlefonts/RobotoMono-Regular.ttf');
+}
+
+.header {
+    background-color: $header-social-color;
+
+    .nav a,
+
+    .nav-toggle {
+        color: $font-color;
+        font-weight: 900;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .nav ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1.7em;
+    }
+}
+
+.logo {
+    padding: 1em 1em 1em 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+a,
+
+h1 {
+    text-align: center;
+    color: $font-color;
+}
+
+p {
+    display: block;
+    margin: 0 auto;
+    line-height: normal;
+}
+
+html {
+    height: 100%;
+
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: $background-color;
+    }
+}
+
+* {
+    color: $font-color;
+    font-family: 'Oswald';
+    font-weight: 500;
+    box-sizing: border-box;
+    border: 0 none;
+}
+
+.social {
+    font-size: 3em;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0.2em;
+    border-top: 2px solid;
+    border-top-color: $header-social-color;
+}
+
+.fa-github {
+    color: $header-social-color;
+}
+
+@media (max-width: 767px) {
+    body {
+        min-width: 300px;
+    }
+
+    img {
+        max-width: 250px;
+    }
+
+    .social {
+        font-size: $font-larger;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        bottom: 0;
+        margin-top: 1em;
+        margin-bottom: 0.2em;
+    }
+}

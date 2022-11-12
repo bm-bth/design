@@ -1,6 +1,7 @@
 ---
 Title: Redovisning
 Description: The course report page
+hidden: true
 ---
 
 Redovisningssida för design
