@@ -6,10 +6,10 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
-
 @import 'blockquotes';
 @import 'code';
-
+@import 'technologies';
+@import 'technology';
 @font-face {
     font-family: 'MyFont_SerifReg';
     src: url('/themes/shared/googlefonts/Oswald-Bold.ttf');
@@ -30,6 +30,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
         font-weight: 900;
         list-style: none;
         text-decoration: none;
+        vertical-align: middle;
     }
 
     .nav ul {
@@ -40,6 +41,12 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
         margin: 0;
         font-size: 1.7em;
     }
+}
+
+.fa,
+
+.fas {
+    font-size: smaller;
 }
 
 .logo {
@@ -60,12 +67,23 @@ a,
 h1 {
     text-align: center;
     color: $font-color;
+    font-family: 'Oswald';
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 p {
     display: block;
+    font-family: 'Oswald';
+    font-size: 1.2em;
+    font-weight: bolder;
+    line-height: 1.5em;
+    width: 50%;
     margin: 0 auto;
-    line-height: normal;
 }
 
 html {
@@ -74,6 +92,7 @@ html {
     body {
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
         background-color: $background-color;
     }
 }
@@ -86,12 +105,16 @@ html {
     border: 0 none;
 }
 
+.footer {
+    margin-top: auto;
+}
+
 .social {
     font-size: 3em;
     display: flex;
     width: 100%;
     justify-content: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     margin-bottom: 0.2em;
     border-top: 2px solid;
@@ -104,7 +127,21 @@ html {
 
 @media (max-width: 767px) {
     body {
+        min-height: 100vh;
         min-width: 300px;
+    }
+
+    p {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .nav {
+        margin-bottom: 1em;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     img {

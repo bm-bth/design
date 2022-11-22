@@ -26,7 +26,8 @@
                     <li{% if page.id==current_page.id %} class="active" {% endif %}>
                         <a href="{{ page.url }}">{{ page.title }}</a>
                         {% if page.title =="Start" %}<i class='fas fa-home'></i>{% endif %}
-                        {% if page.title =="About" %}<i class='fas fa-info' style="margin-bottom: 1em;"></i>{% endif %}
+                        {% if page.title =="About" %}<i class='fas fa-info'></i>{% endif %}
+                        {% if page.title =="Technology" %}<i class="fas fa-laptop-code"></i>{% endif %}
                     </li>
                 {% endfor %}
             </ul>
