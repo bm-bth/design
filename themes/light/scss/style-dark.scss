@@ -23,18 +23,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
     src: url('/themes/shared/googlefonts/RobotoMono-Regular.ttf');
 }
 
-html {
-    font-family: Helvetica, Courier, monospace;
-}
-
 .header {
-    background-color: $header-social-color;
+    background-color: $header-social-color-dark;
     height: 7em;
 
     .nav a,
 
     .nav-toggle {
-        color: $font-color;
+        color: $font-alternative-color;
         font-weight: 900;
         list-style: none;
         text-decoration: none;
@@ -56,7 +52,7 @@ ul {
 }
 
 #nav-a {
-    color: $font-color;
+    color: $font-alternative-color;
 }
 
 .fa,
@@ -90,7 +86,7 @@ a,
 
 h1 {
     text-align: center;
-    color: $font-color;
+    color: $font-alternative-color;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -115,12 +111,12 @@ html {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        background-color: $background-color;
+        background-color: $background-color-dark;
     }
 }
 
 * {
-    color: $font-color;
+    color: $font-alternative-color;
     font-weight: 500;
     box-sizing: border-box;
     border: 0 none;
@@ -174,7 +170,7 @@ html {
     .nav ul li a {
         display: block;
         padding: 0.4em 0;
-        color: $font-color;
+        color: $font-alternative-color;
     }
 
     a:hover {

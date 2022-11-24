@@ -1,6 +1,6 @@
 ---
 Title: Technology
-Description: Technologies
+Description: Technology
 Template: technology
 Sidebar: true
 hidden: false

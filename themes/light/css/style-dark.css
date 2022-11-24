@@ -6570,17 +6570,13 @@ pre {
   src: url("/themes/shared/googlefonts/RobotoMono-Medium.ttf");
   src: url("/themes/shared/googlefonts/RobotoMono-Regular.ttf");
 }
-html {
-  font-family: Helvetica, Courier, monospace;
-}
-
 .header {
-  background-color: #B8C4BB;
+  background-color: #0D1B1E;
   height: 7em;
 }
 .header .nav a,
 .header .nav-toggle {
-  color: #585858;
+  color: #fff;
   font-weight: 900;
   list-style: none;
   text-decoration: none;
@@ -6600,7 +6596,7 @@ ul {
 }
 
 #nav-a {
-  color: #585858;
+  color: #fff;
 }
 
 .fa,
@@ -6630,7 +6626,7 @@ img {
 a,
 h1 {
   text-align: center;
-  color: #585858;
+  color: #fff;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -6655,11 +6651,11 @@ html body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #E2E2E2;
+  background-color: #13272C;
 }
 
 * {
-  color: #585858;
+  color: #fff;
   font-weight: 500;
   box-sizing: border-box;
   border: 0 none;
@@ -6707,7 +6703,7 @@ html body {
   .nav ul li a {
     display: block;
     padding: 0.4em 0;
-    color: #585858;
+    color: #fff;
   }
   a:hover {
     text-decoration: underline;
