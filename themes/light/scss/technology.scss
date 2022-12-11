@@ -20,6 +20,16 @@ article {
     width: auto;
 }
 
+.tech-p {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
 pre {
     width: 30%;
     margin: 0 auto;
@@ -36,9 +46,14 @@ pre {
         flex-direction: column;
     }
 
+    .technology-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     pre {
         margin-top: 1em;
-        width: 60%;
+        width: 75%;
     }
 
     a:hover {

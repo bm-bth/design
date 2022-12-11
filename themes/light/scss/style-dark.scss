@@ -8,10 +8,12 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'variables';
 @import 'blockquotes';
 @import 'code';
-
+@import 'analyses';
+@import 'analysis';
+@import 'gallery';
 @import 'technologies';
 @import 'technology';
-
+@import 'style';
 
 @font-face {
     font-family: 'MyFont_SerifReg';
@@ -24,13 +26,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 }
 
 .header {
-    background-color: $header-social-color-dark;
-    height: 7em;
+    //background-color: $header-social-color-dark;
+    height: $header-height;
+    background-color: $background-color-dark;
 
     .nav a,
 
     .nav-toggle {
-        color: $font-alternative-color;
+        color: $font-color-dark;
         font-weight: 900;
         list-style: none;
         text-decoration: none;
@@ -42,7 +45,21 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
         display: flex;
         justify-content: flex-end;
         list-style: none;
+        padding: 0;
     }
+}
+
+.nav {
+    margin: 0 auto;
+    width: auto;
+}
+
+.nav a {
+    color: $font-color-dark;
+    list-style: none;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0.4em 0;
 }
 
 ul {
@@ -51,31 +68,43 @@ ul {
     margin: 0;
 }
 
-#nav-a {
-    color: $font-alternative-color;
+.fas.fa-image,
+
+.fas.fa-laptop-code,
+
+.fas.fa-info,
+
+.fas.fa-chart-bar,
+
+.fas.fa-home {
+    font-size: small;
+    color: $font-color-dark;
 }
 
-.fa,
+.fa-github,
 
-.fas {
-    font-size: smaller;
-}
+.fa-sun,
 
-.fab.fa-github,
-
-.fas.fa-moon,
-
-.fas.fa-trash-alt {
-    color: $social-font-color;
+.fa-trash-alt {
+    padding-top: 0.2em;
+    color: $font-color-dark;
+    margin: 0 0.2em;
 }
 
 .logo {
-    padding: 1em 1em 1em 0;
+    padding: 0.5em 1em 1em 0;
+}
+
+.start-img {
+    height: auto;
+    max-width: 100%;
+    border-radius: $img-border-radius;
 }
 
 img {
     display: block;
     margin: 0 auto;
+    filter: brightness(80%);
 }
 
 .hidden {
@@ -84,11 +113,17 @@ img {
 
 a,
 
-h1 {
+h1,
+
+h2 {
     text-align: center;
-    color: $font-alternative-color;
+    color: $font-color-dark;
     font-weight: bolder;
     text-decoration: none;
+}
+
+.nav a {
+    color: $font-color-dark;
 }
 
 a:hover {
@@ -96,16 +131,18 @@ a:hover {
 }
 
 p {
+    color: $font-color-dark;
     display: block;
     font-size: 1.2em;
-    font-weight: bolder;
+    font-weight: bold;
     line-height: 1.5em;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
 html {
     height: 100%;
+    font-family: Helvetica, Courier, monospace;
 
     body {
         display: flex;
@@ -116,8 +153,8 @@ html {
 }
 
 * {
-    color: $font-alternative-color;
-    font-weight: 500;
+    color: $font-color-dark;
+    font-weight: 400;
     box-sizing: border-box;
     border: 0 none;
 }
@@ -133,24 +170,112 @@ html {
     justify-content: center;
     position: relative;
     bottom: 0;
-    margin-bottom: 0.2em;
+    padding-bottom: 0.2em;
     border-top: 3px solid $header-social-color;
-    border-top-color: $header-social-color;
+    background-color: $header-social-color-dark;
 }
 
-.fa-github,
+.sidemenu {
+    margin-left: 2em;
+}
 
-.fa-moon,
+.sidemenu a {
+    color: $tech-back-color;
+}
 
-.fa-trash-alt {
-    color: $header-social-color;
-    margin: 0em 0.2em;
+.links-analys {
+    color: $font-color;
+}
+
+.analysis-01-colors-box:hover {
+    background-color: $hover-color-dark;
+}
+
+.analysis-02-load-box:hover {
+    background-color: $hover-color-dark;
+}
+
+.analysis-03-design-principles-box:hover {
+    background-color: $hover-color-dark;
+}
+
+.analysis-01-colors-box {
+    text-align: center;
+    border: 2px solid $font-color-dark;
+    background-color: $background-color-dark;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
+
+.analysis-02-load-box {
+    text-align: center;
+    border: 2px solid $font-color-dark;
+    background-color: $background-color-dark;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
+
+.analysis-03-design-principles-box {
+    text-align: center;
+    border: 2px solid $font-color-dark;
+    background-color: $background-color-dark;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
+
+.tech:hover {
+    background-color: $hover-color-dark;
+}
+
+
+.tech {
+    text-align: center;
+    border: 2px solid $font-color-dark;
+    background-color: $background-color-dark;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
+
+pre {
+    background-color: $hover-color-dark;
+    border: 2px solid $font-color-dark;;
+}
+
+.headings-analysis {
+    text-align: left;
+    margin-left: 12.5%;
+    color: $font-color-dark;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.headings-analysis a {
+    color: $font-color-dark;
 }
 
 @media (max-width: 767px) {
     body {
         min-height: 100vh;
         min-width: 300px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidemenu {
+        font-size: $mobile-sidemenu-font-size;
+        margin-bottom: 1em;
     }
 
     .logo {
@@ -170,15 +295,11 @@ html {
     .nav ul li a {
         display: block;
         padding: 0.4em 0;
-        color: $font-alternative-color;
+        color: $font-color-dark;
     }
 
     a:hover {
         text-decoration: underline;
-    }
-
-    img {
-        max-width: 250px;
     }
 
     .social {

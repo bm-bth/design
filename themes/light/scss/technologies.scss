@@ -1,29 +1,16 @@
+@import 'variables';
 
 .technology-container {
     display: grid;
     font-weight: bolder;
     gap: 1em 1em;
-    width: 85%;
+    width: 65%;
     margin: 0 auto;
 }
 
 .technology-container h1 {
     grid-column: span 3;
     justify-self: center;
-}
-
-.tech:hover {
-    background-color: $hover-color;
-}
-
-.tech {
-    text-align: center;
-    border: 2px solid;
-    background-color: $font-alternative-color;
-    font-size: 1.5em;
-    border-radius: 30px;
-    line-height: 2em;
-    text-align: center;
 }
 
 .tech.css-box {

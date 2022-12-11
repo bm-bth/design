@@ -1,0 +1,29 @@
+@import 'variables';
+
+.analysis-container {
+    display: grid;
+    font-weight: bolder;
+    gap: 1em 1em;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.analysis-container h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.analysis-01-colors-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.analysis-02-load-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.analysis-03-design-principles-box {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}

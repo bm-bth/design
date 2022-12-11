@@ -1,0 +1,32 @@
+{% include 'incl/header.twig' %}
+<body>
+{% include 'incl/nav.twig' %}
+<div class="main" role="main">
+{% for page in pages("analysis") %}
+{% if page.id==current_page.id %}<h1> {{page.title}} </h1>{% endif %}
+{% endfor %}
+{% if meta.Sidebar%}
+
+<div class="analysis">
+    <div class="sidemenu">
+        <ul>
+        <li{% if current_page.id=="/analysis/01_colors" %} class="active" {% endif %}><a href="01_colors">Färger</a></li>
+        <li{% if current_page.id=="/analysis/02_load" %} class="active" {% endif %}><a href="02_load">Laddningstider</a></li>
+        <li{% if current_page.id=="/analysis/03_design_principles" %} class="active" {% endif %}><a href="03_design_principles">Design</a></li>
+        </ul>
+    </div>
+
+<article>
+        {{ content }}
+
+</article>
+    </div>
+</div>
+{% else %}
+    <div class="analysis">
+        {{content}}
+    </div>
+{% endif%}   
+{% include 'incl/footer.twig' %}
+</body>
+</html>

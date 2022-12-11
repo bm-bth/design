@@ -8,7 +8,6 @@ if (session_status() == PHP_SESSION_NONE) {
 if (isset($_GET["action"])) {
     if ($_GET["action"] == "theme") {
         $previousValue = isset($_SESSION["theme"]) ? $_SESSION["theme"] : null;
-
         if ($previousValue == "dark") {
             unset($_SESSION["theme"]);
         } else {

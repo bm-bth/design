@@ -1,0 +1,68 @@
+@import 'variables';
+
+.analysis ul {
+    list-style: none;
+}
+
+.analysis {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidemenu {
+    font-size: 1.2em;
+    width: 20%;
+    text-align: left;
+    margin-left: 1em;
+}
+
+article {
+    width: auto;
+}
+
+.analys-p {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+pre {
+    width: 30%;
+    margin: 0 auto;
+    padding: auto;
+}
+
+.social {
+    margin-top: 0.3em;
+}
+
+.link-div {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+
+@media (max-width: 767px) {
+    .analysis {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .analysis-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    pre {
+        margin-top: 1em;
+        width: 75%;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

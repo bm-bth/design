@@ -1,0 +1,17 @@
+{% include 'incl/header.twig' %}
+<body>
+{% include 'incl/nav.twig' %}
+<div class="main" role="main">
+<h1>Analysis</h1>
+<div class="analysis-container">
+    <div class ="analysis-01-colors-box"><a href="../../me/portfolio/analysis/01_colors">Färger</a></div>
+    <div class="analysis-02-load-box"><a href="../../me/portfolio/analysis/02_load">Laddningstider</a></div>
+    <div class="analysis-03-design-principles-box"><a href="../../me/portfolio/analysis/03_design_principles">Design</a></div>
+    {#  {% for page in pages("analysis") %}
+    <div class="analysis-{{ (page.url| split('/')|last)|lower }}-box"><a href="{{ page.url }}">{{ page.title }}</a></div>
+    {% endfor %} #}
+</div>
+</div>
+{% include 'incl/footer.twig' %}
+</body>
+</html>

@@ -8,7 +8,9 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'variables';
 @import 'blockquotes';
 @import 'code';
-
+@import 'analyses';
+@import 'analysis';
+@import 'gallery';
 @import 'technologies';
 @import 'technology';
 
@@ -29,12 +31,10 @@ html {
 
 .header {
     background-color: $header-social-color;
-    height: 7em;
-
-    .nav a,
+    height: $header-height;
 
     .nav-toggle {
-        color: $font-color;
+        color: $footer-color-light;
         font-weight: 900;
         list-style: none;
         text-decoration: none;
@@ -46,7 +46,21 @@ html {
         display: flex;
         justify-content: flex-end;
         list-style: none;
+        padding: 0;
     }
+}
+
+.nav {
+    margin: 0 auto;
+    width: auto;
+}
+
+.nav a {
+    color: $font-color;
+    list-style: none;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0.4em 0;
 }
 
 ul {
@@ -55,30 +69,58 @@ ul {
     margin: 0;
 }
 
-#nav-a {
-    color: $font-color;
+.fas.fa-image,
+
+.fas.fa-laptop-code,
+
+.fas.fa-info,
+
+.fas.fa-chart-bar,
+
+.fas.fa-home {
+    font-size: medium;
+    color: $footer-color-light;
 }
 
-.fa,
+.fa-github,
 
-.fas {
-    font-size: smaller;
-}
+.fa-moon,
 
-.fab.fa-github,
-
-.fas.fa-moon,
-
-.fas.fa-trash-alt {
-    color: $social-font-color;
+.fa-trash-alt {
+    padding-top: 0.2em;
+    color: $font-color-dark;
+    margin: 0 0.2em;
 }
 
 .logo {
-    padding: 1em 1em 1em 0;
+    padding: 0.5em 1em 1em 0;
+}
+
+.start-img {
+    height: auto;
+    max-width: 100%;
+    border-radius: $img-border-radius;
 }
 
 img {
     display: block;
+    margin: 0 auto;
+}
+
+.analysis-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.w3school-img {
+    height: auto;
+    max-width: 75%;
+    border-radius: 1.5em;
+    text-align: center;
+}
+
+.analysis-table {
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -88,10 +130,16 @@ img {
 
 a,
 
-h1 {
+h1,
+
+h2,
+
+h3,
+
+h4 {
     text-align: center;
     color: $font-color;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -100,12 +148,25 @@ a:hover {
 }
 
 p {
+    color: $font-color;
+    font-weight: bolder;
+    box-sizing: border-box;
+    border: 0 none;
     display: block;
     font-size: 1.2em;
     font-weight: bolder;
     line-height: 1.5em;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
+}
+
+.headings-analysis {
+    text-align: left;
+    margin-left: 12.5%;
+    color: $footer-color-light;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 html {
@@ -115,15 +176,21 @@ html {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        background-color: $background-color;
+        //background-color: $background-color;
+        background-color: $header-social-color;
     }
 }
 
-* {
-    color: $font-color;
-    font-weight: 500;
-    box-sizing: border-box;
-    border: 0 none;
+.sidemenu {
+    margin-left: 2em;
+}
+
+.sidemenu a {
+    color: $footer-color-light;
+}
+
+.links-analys {
+    color: $footer-color-light;
 }
 
 .footer {
@@ -137,24 +204,87 @@ html {
     justify-content: center;
     position: relative;
     bottom: 0;
-    margin-bottom: 0.2em;
-    border-top: 3px solid $header-social-color;
-    border-top-color: $header-social-color;
+    padding-bottom: 0.2em;
+    border-top: 3px solid $background-color;
+    background-color: $footer-color-light;
 }
 
-.fa-github,
+.tech:hover {
+    background-color: $hover-color-light;
+}
 
-.fa-moon,
+.tech {
+    text-align: center;
+    border: 2px solid $footer-color-light;
+    background-color: $background-color;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
 
-.fa-trash-alt {
-    color: $header-social-color;
-    margin: 0em 0.2em;
+.analysis-01-colors-box:hover {
+    background-color: $hover-color-light;
+}
+
+.analysis-02-load-box:hover {
+    background-color: $hover-color-light;
+}
+
+.analysis-03-design-principles-box:hover {
+    background-color: $hover-color-light;
+}
+
+.analysis-01-colors-box {
+    text-align: center;
+    border: 2px solid $footer-color-light;
+    background-color: $background-color;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
+
+.analysis-02-load-box {
+    text-align: center;
+    border: 2px solid $footer-color-light;
+    background-color: $background-color;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
+
+.analysis-03-design-principles-box {
+    text-align: center;
+    border: 2px solid $footer-color-light;
+    background-color: $background-color;
+    font-size: 1.5em;
+    border-radius: 30px;
+    line-height: 2em;
+    text-align: center;
+}
+
+pre {
+    border: 2px solid $footer-color-light;
 }
 
 @media (max-width: 767px) {
     body {
         min-height: 100vh;
         min-width: 300px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+        margin 0.2em;
+    }
+
+    .sidemenu {
+        font-size: $mobile-sidemenu-font-size;
+        margin-bottom: 1em;
     }
 
     .logo {
@@ -180,11 +310,7 @@ html {
     a:hover {
         text-decoration: underline;
     }
-
-    img {
-        max-width: 250px;
-    }
-
+    
     .social {
         font-size: $font-larger;
         display: flex;
