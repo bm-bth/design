@@ -1,5 +1,5 @@
 ---
-Logo: assets/img/logo-light.png
+Logo: assets/img/logo-new.webp
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/bm-bth/portfolio

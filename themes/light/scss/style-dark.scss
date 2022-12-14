@@ -28,7 +28,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 .header {
     //background-color: $header-social-color-dark;
     height: $header-height;
-    background-color: $background-color-dark;
+    background-color: transparent;
 
     .nav a,
 
@@ -177,14 +177,23 @@ html {
 
 .sidemenu {
     margin-left: 2em;
+    border: 2px solid $font-color-dark;
+    border-radius: 10%;
+    height: fit-content;
+    width: fit-content;
+    padding: 1em;
 }
 
 .sidemenu a {
-    color: $tech-back-color;
+    color: $dark-theme-link-color;
 }
 
 .links-analys {
-    color: $font-color;
+    color: $dark-theme-link-color;
+}
+
+.headings-analysis a {
+    color: $dark-theme-link-color;
 }
 
 .analysis-01-colors-box:hover {
@@ -252,14 +261,32 @@ pre {
 .headings-analysis {
     text-align: left;
     margin-left: 12.5%;
-    color: $font-color-dark;
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.headings-analysis a {
+.link-div li {
+    margin: 0.5em;
+}
+
+.logo-img {
+    width: 400px;
+    filter: brightness(90%);
+}
+
+.ref-link {
     color: $font-color-dark;
+    font-weight: bold;
+}
+
+.li-list {
+    color: $font-color-dark;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+sup {
+    color: $dark-theme-link-color;
 }
 
 @media (max-width: 767px) {
@@ -278,13 +305,25 @@ pre {
         margin-bottom: 1em;
     }
 
+    .sidemenu li {
+        margin-bottom: 0.4em;
+    }
+
     .logo {
         position: absolute;
+    }
+
+    .logo-img {
+        width: 275px;
+        filter: brightness(90%);
+        margin-left: 1.5em;
+        margin-top: 1em;
     }
 
     p {
         width: 85%;
         margin: 0 auto;
+        padding-top: 1.5em;
     }
 
     ul {

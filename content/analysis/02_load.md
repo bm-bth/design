@@ -14,10 +14,10 @@ Denna rapport går ut på att välja ett antal olika webbplatser och testa dem f
 
 Webbplatserna som har valts ut för mätningen är: <br>
 <div class="link-div">
-    <ul>
+    <ul class="li-list">
         <li><a href="https://www.fastighetsbyran.com/sv/sverige" class="links-analys">1. Fastighetsbyrån</a></li>
         <li><a href="https://www.svenskfast.se/" class="links-analys">2. Svensk Fastighetsförmedling</a></li>
-        <li><a href="https://www.lansfast.se/" class="links-analys">3. Länsförsäkringar fastighetsförmedling</li>
+        <li><a href="https://www.lansfast.se/" class="links-analys">3. Länsförsäkringar fastighetsförmedling</a></li>
     </ul>
 </div>
 <br>
@@ -28,37 +28,37 @@ Verktygen för att testa webbplatsernas hastighet och prestanda var Google Chrom
 
 ##Resultat<br><br>
 <picture>
-    <source media="(min-width: 767px)" srcset="%base_url%/image/fast-start.png?w=900&">
-<img class="loadImg" src="%base_url%/image/fast-start.png?w=400&q=100" alt="start page fastighetsbyrån">
+    <source media="(min-width: 767px)" srcset="%base_url%/image/fast-start.webp?w=900&">
+<img class="loadImg" src="%base_url%/image/fast-start.webp?w=400&q=100" alt="start page fastighetsbyrån">
 </picture>
 <br>
 <div class="embed-container2">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRSA6nZAZcenukdhxTkMSk5j812gLCxNWwRlyGrKMSz2b8hpseslvkfK8GmKtDFgB5jy9Skgq43UoD9/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRSA6nZAZcenukdhxTkMSk5j812gLCxNWwRlyGrKMSz2b8hpseslvkfK8GmKtDFgB5jy9Skgq43UoD9/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="google sheet fastighetsbyrån"></iframe>
 </div>
 Fastighetsbyråns webbsidor fick allmänt väldigt dåliga prestanda betyg. För mobiler låg prestanda poängen på mellan 16-20 poäng, och för datorer 52-57 poäng. Webbsidorna tog i genomsnitt mellan 1.7 och 10.86 sekunder på sig att läsas in helt. Detta visas i "load"-kolumnen som visar tiden det tar för alla resurser som skripts, bilder, stylesheets och iframes att läsas in. En av anledningarna till varför Fastighetsbyrån fick så dåliga "load"-tider är pga en bild på Vadstena som finns på mäklar-sidan som är 21.5 MB stor och som tar upp mer än hälften av alla resurser som läses in på sidan. För att förbättra prestandabetygen och laddningstiden kan Javascript och CSS som inte används tas bort. Vidare kan resurser som blockerar renderingen tas bort och bildformaten WebP och AVIF som ger en bättre komprimering användas istället för PNG och JPG-formaten som används för tillfället.<br><br><br>
 
 <picture>
-    <source media="(min-width: 767px)" srcset="%base_url%/image/svensk-start.png?w=900">
+    <source media="(min-width: 767px)" srcset="%base_url%/image/svensk-start.webp?w=900">
 
-<img class="loadImg" src="%base_url%/image/svensk-start.png?w=400&q=100" alt="start page svensk fastighetsbyrå">
+<img class="loadImg" src="%base_url%/image/svensk-start.webp?w=400&q=100" alt="start page svensk fastighetsbyrå">
 </picture>
 <br>
 
 <div class="embed-container2">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGethpzudlHQ9oX6rGdc15dQU_KTO93j8rPgRqTQs_J8nEWfhQcYNjszW73iYBqShCF319S8BuSExQ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGethpzudlHQ9oX6rGdc15dQU_KTO93j8rPgRqTQs_J8nEWfhQcYNjszW73iYBqShCF319S8BuSExQ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" title="google sheet svensk fastighetsförmedling"></iframe>
 </div>
 
 
 Webbplatsen för Svensk Fastighetsförmedling hade "load"-tider på mellan 2 och 5.95 sekunder. Prestanda poängen för mobiler var mellan 58-76 poäng och 97-98 poäng för datorer. Till skillnad från Fastighetsbyrån och Länsförsäkringar fastighetsförmedling, använder sig Svensk Fastighetsförmedling av en interaktiv karta på sin mäklar-sida istället för bilder på städer där deras mäklarbyråer befinner sig. Svensk Fastighetsförmedling kan optimera prestandan för sin webbplats ännu mer genom att oanvänd CSS och Javascript reduceras och resurser som blockerar renderingen tas bort. Detta kan förbättra "load"-tiderna ännu mer och öka tidsbesparingarna för laddningstiderna. <br><br><br>
 
 <picture>
-    <source media="(min-width: 767px)" srcset="%base_url%/image/lans-start.png?w=900&">
-<img class="loadImg" src="%base_url%/image/lans-start.png?w=400&q=100" alt="start page länsförsäkringar">
+    <source media="(min-width: 767px)" srcset="%base_url%/image/lans-start.webp?w=900&">
+<img class="loadImg" src="%base_url%/image/lans-start.webp?w=400&q=100" alt="start page länsförsäkringar">
 </picture>
 <br>
 
 <div class="embed-container2">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGethpzudlHQ9oX6rGdc15dQU_KTO93j8rPgRqTQs_J8nEWfhQcYNjszW73iYBqShCF319S8BuSExQ/pubhtml?gid=586639532&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGethpzudlHQ9oX6rGdc15dQU_KTO93j8rPgRqTQs_J8nEWfhQcYNjszW73iYBqShCF319S8BuSExQ/pubhtml?gid=586639532&amp;single=true&amp;widget=true&amp;headers=false" title="google sheet länsförsäkringar"></iframe>
 </div>
 
 "Load"-tiden för Länsförsäkringar fastighetsförmedling varierade mellan 2.35-4.06 sekunder. Utav de tre sidor som testades på webbplatsen var "till salu"-sidan den sida med flest resurser och sidan som var långsammast att laddas. Sidan använder både WEBP och JPEG-formaten. Prestanda poängen för mobiler var 41-52 poäng och 75-97 poäng för datorer. Precis som föregående webbplatser kan Länsförsäkringar fastighetsförmedling

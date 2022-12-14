@@ -30,7 +30,7 @@ html {
 }
 
 .header {
-    background-color: $header-social-color;
+    background-color: transparent;
     height: $header-height;
 
     .nav-toggle {
@@ -132,13 +132,18 @@ a,
 
 h1,
 
-h2,
-
 h3,
 
 h4 {
     text-align: center;
-    color: $font-color;
+    color: $footer-color-light;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    color: $footer-color-light;
     font-weight: bold;
     text-decoration: none;
 }
@@ -183,6 +188,11 @@ html {
 
 .sidemenu {
     margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.sidemenu li {
+    margin-bottom: 0.5em;
 }
 
 .sidemenu a {
@@ -269,6 +279,43 @@ pre {
     border: 2px solid $footer-color-light;
 }
 
+.ref-link {
+    font-weight: bold;
+    color: $footer-color-light;
+}
+
+.li-list {
+    color: $font-color;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+sup {
+    color: $footer-color-light;
+}
+
+.link-div li {
+    margin: 0.5em;
+}
+
+.text-load {
+    font-size: 0.8em;
+    color: $footer-color-light;
+}
+
+.logo-img {
+    width: 400px;
+    filter: brightness(40%);
+}
+
+.sidemenu {
+    margin-left: 2em;
+    border: 2px solid $footer-color-light;
+    border-radius: 10%;
+    height: fit-content;
+    width: fit-content;
+    padding: 1em;
+}
+
 @media (max-width: 767px) {
     body {
         min-height: 100vh;
@@ -284,16 +331,27 @@ pre {
 
     .sidemenu {
         font-size: $mobile-sidemenu-font-size;
-        margin-bottom: 1em;
+    }
+
+    .sidemenu li {
+        margin-bottom: 0.4em;
     }
 
     .logo {
         position: absolute;
     }
 
+    .logo-img {
+        width: 275px;
+        filter: brightness(40%);
+        margin-left: 1.5em;
+        margin-top: 1em;
+    }
+
     p {
         width: 85%;
         margin: 0 auto;
+        padding-top: 1.5em;
     }
 
     ul {
